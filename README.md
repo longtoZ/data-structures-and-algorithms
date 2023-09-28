@@ -19,3 +19,7 @@
 
 - `Algorithm`:
     - Updating...
+
+# Is there a website for this repo?
+
+- The website will have both content an sidebar compiler to write code. I will make it in the future (or maybe not).
