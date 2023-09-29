@@ -1,6 +1,6 @@
 # 1. Introduction
 
-- Tree is a recursive data structure which consists of `root` and some `sub-trees`.
+- Tree is a recursive (non-linear) data structure which consists of `root` and some `sub-trees`.
 
 ![](img/img5.png)
 

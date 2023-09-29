@@ -1,6 +1,6 @@
 # 1. Introduction
 
-- `Queue` is an abstract data type which operates according to `FIFO` (First In, First Out), which means first added element will be taken out first.
+- `Queue` is a linear data structure which operates according to `FIFO` (First In, First Out), which means first added element will be taken out first.
 
 ![](img/img1.png)
 

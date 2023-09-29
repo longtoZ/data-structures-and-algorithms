@@ -1,6 +1,6 @@
 # 1. Introduction
 
-- `Stack` is an abstract data type and it operates according to `LIFO` (Last In, First Out), which means the recently added element will be taken out first.
+- `Stack` is a linear data structure and it operates according to `LIFO` (Last In, First Out), which means the recently added element will be taken out first.
 - Time complexity is `O(1)` - constant time.
 
 - Basic operations on stacks are:
