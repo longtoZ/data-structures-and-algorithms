@@ -8,6 +8,7 @@
 - I will keep updating new content as far as I've learned and summarized.
 
 - `Data Structure`:
+    - Big-O Notation
     - Single linked list.
     - Doubly linked list.
     - Stack.
@@ -16,10 +17,25 @@
         - Binary tree.
         - Binary search tree.
     - Graph (updating...)
+    - Others:
+        - Struct
+        - Vector
+        - Set
+        - Hashmap (Hash table)
 
 - `Algorithm`:
-    - Updating...
+    - Recursion
+    - Seach: 
+        - Linear search
+        - Binary search
+    - Sort:
+        - Bubble sort
+        - Selection sort
+        - Insertion sort
+        - Merge sort
+        - Quick sort (updating...)
+        - Heap sort (updating...)
 
 # Is there a website for this repo?
 
-- The website will have both content an sidebar compiler to write code. I will make it in the future (or maybe not).
+- The website will have both content and sidebar compiler to write code. I will make it in the future (or maybe not).
