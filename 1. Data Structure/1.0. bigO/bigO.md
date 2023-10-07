@@ -20,16 +20,16 @@
 
 - The notation `O(n)` is the mathematical way to express the worst case of an algorithm's running time.
 
-![](img/img1.jpg)
+    ![](img/img1.jpg)
 
 - Common time complexities:
 
-| Big-O | Name | Example |
-| --- | --- | --- |
-| `O(1)`| Constant time | Statement, one line of code |
-| `O(log n)`| Logarithm time | Binary search |
-| `O(n)`| Linear time | Single loop
-| `O(n log(n))`| Linearithmic time | Effective sorting algorithm (merge sort, heap sort, quick sort) |
-| `O(n^2)`| Quadratic time | Double loop |
-| `O(2^n)`| Exponential time | Complex full search
-| `O(n!)`| Factorial time | Recursion
+    | Big-O | Name | Example |
+    | --- | --- | --- |
+    | `O(1)`| Constant time | Statement, one line of code |
+    | `O(log n)`| Logarithm time | Binary search |
+    | `O(n)`| Linear time | Single loop
+    | `O(n log(n))`| Linearithmic time | Effective sorting algorithm (merge sort, heap sort, quick sort) |
+    | `O(n^2)`| Quadratic time | Double loop |
+    | `O(2^n)`| Exponential time | Complex full search
+    | `O(n!)`| Factorial time | Recursion |

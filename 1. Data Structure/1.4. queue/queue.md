@@ -2,7 +2,7 @@
 
 - `Queue` is a linear data structure which operates according to `FIFO` (First In, First Out), which means first added element will be taken out first.
 
-![](img/img1.png)
+    ![](img/img1.png)
 
 - Basic operations of queue are:
     - `EnQueue(x)` or `Push(x)`: add an element to the tail (rear).
@@ -21,66 +21,66 @@
 
 - First, we create and array.
 
-```cpp
-int A[10];
-int front = -1;
-int rear = -1;
+    ```cpp
+    int A[10];
+    int front = -1;
+    int rear = -1;
 
-int IsEmpty() {
-    if (front==-1 && rear==-1) {
-        return 1;
-    } else {
-        return 0;
+    int IsEmpty() {
+        if (front==-1 && rear==-1) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
-}
-```
+    ```
 
-![](img/img4.png)
+    ![](img/img4.png)
 
 - Then we can insert `5` to the rear.
 
-![](img/img5.png)
+    ![](img/img5.png)
 
 - To enqueue, we increase `rear` and insert new element to that position.
 
-```cpp
-void Enqueue(int x) {
-    int size = sizeof(A)/sizeof(int);
+    ```cpp
+    void Enqueue(int x) {
+        int size = sizeof(A)/sizeof(int);
 
-    // Cannot insert if queue is full
-    if (rear < size-1) {
-        if (IsEmpty()) {
-            front = 0;
-            rear = 0;
-        } else {
-            rear++;
+        // Cannot insert if queue is full
+        if (rear < size-1) {
+            if (IsEmpty()) {
+                front = 0;
+                rear = 0;
+            } else {
+                rear++;
+            }
+
+            A[rear] = x;
         }
 
-        A[rear] = x;
     }
+    ```
 
-}
-```
+    ![](img/img7.png)
+    ![](img/img8.png)
 
-![](img/img7.png)
-![](img/img8.png)
+- To dequeue, we increase `front` position.
 
--To dequeue, we increase `front` position.
+    ![](img/img6.png)
 
-![](img/img6.png)
-
-```cpp
-void Dequeue() {
-    if (!isEmpty()) {
-        if (front==rear) {
-            front = -1;
-            rear = -1;
-        } else {
-            front++;
+    ```cpp
+    void Dequeue() {
+        if (!isEmpty()) {
+            if (front==rear) {
+                front = -1;
+                rear = -1;
+            } else {
+                front++;
+            }
         }
     }
-}
-```
+    ```
 
 ## b. Using linked list
 

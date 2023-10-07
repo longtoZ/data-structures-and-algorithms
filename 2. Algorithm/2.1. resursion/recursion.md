@@ -10,50 +10,50 @@
 
 - To sum all numbers in range, we can use for-loop traditionally
 
-```cpp
-int sum(int n) {
-    int total = 0;
+    ```cpp
+    int sum(int n) {
+        int total = 0;
 
-    for (int i=0; i<=n; i++) {
-        total += i;
+        for (int i=0; i<=n; i++) {
+            total += i;
+        }
+
+        return total;
     }
-
-    return total;
-}
-```
+    ```
 
 - However, we can sum these number recursively.
 
-```cpp
-int sum(int n) {
-    if (n==0) {
-        return 0;
-    } else {
-        return n + sum(n-1);
+    ```cpp
+    int sum(int n) {
+        if (n==0) {
+            return 0;
+        } else {
+            return n + sum(n-1);
+        }
     }
-}
-```
+    ```
 
 ### Q: How does this code work?
 
 - Let's say we call the function `sum(5)`. Since `5` is greater than 0 so the function will run this line:
 
-```cpp
-return n + sum(n-1);
+    ```cpp
+    return n + sum(n-1);
 
-// 5 + sum(4)
-```
+    // 5 + sum(4)
+    ```
 
-![](img/img1.png)
+    ![](img/img1.png)
 
 - However, we don't know what will `sum(4)` return. So, `sum(4)` will be recursively executed.
 
-![](img/img2.png)
+    ![](img/img2.png)
 
 - Then, we continue until we reach `n=0` then we can solve the addition.
 
-![](img/img3.png)
-![](img/img4.png)
+    ![](img/img3.png)
+    ![](img/img4.png)
 
 ```cpp
 // 5 + sum(4)
@@ -65,7 +65,6 @@ return n + sum(n-1);
 ```
 
 ## b. Factorial
-
 
 - Similar to the previous problem, we code will be:
 

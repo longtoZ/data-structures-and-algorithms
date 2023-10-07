@@ -2,14 +2,14 @@
 
 - An array in C++ doesn't allow you to add or remove its element. If you want to do so, you must create a new array with a larger size, copy all the elements from the old array and finally add new element.
 
-![](img/img1.png)
+    ![](img/img1.png)
 
 - Therefore, we can use `single linked list` which stores elements in separated parts of the memory. Linked list is a collection of entities called `Nodes`. Each node has `[value, link]`. So we are able to add (or remove) any new element in any position, as long as you specify a correct address.
 
-![](img/img2.png)
+    ![](img/img2.png)
 
 
-> **Time complexity** for array to look for an element is `O(1)` since you only need a `position`. However, when it comes to linked list, it is `O(n)`. Because first element has to look for the address of second element, second one looks for the address of third one, and so on.
+    > **Time complexity** for array to look for an element is `O(1)` since you only need a `position`. However, when it comes to linked list, it is `O(n)`. Because first element has to look for the address of second element, second one looks for the address of third one, and so on.
 
 ### Array vs Linked list
 
@@ -43,14 +43,14 @@ int main() {
 
 - Since there is no element in the list, `head` and `tail` point to nowhere.
 
-```cpp
-int main() {
-    // ...
+    ```cpp
+    int main() {
+        // ...
 
-    Node* head = NULL;
-    Node* tail = NULL;
-}
-```
+        Node* head = NULL;
+        Node* tail = NULL;
+    }
+    ```
 
 ## c. Insert Node at the beginning
 
@@ -58,37 +58,37 @@ int main() {
 
 - If the list is not empty, add `Node` to the head.
 
-```cpp
-if (head == NULL) {
-    head = node;
-    tail = node;
-} else {
-    node -> next = head; // Set the new Node next pointer to the head
-    head = node; // Head is now the new Node
-}
-```
+    ```cpp
+    if (head == NULL) {
+        head = node;
+        tail = node;
+    } else {
+        node -> next = head; // Set the new Node next pointer to the head
+        head = node; // Head is now the new Node
+    }
+    ```
 
-![](img/img3.png)
+    ![](img/img3.png)
 
-> We are adding *Node 0* to the list. First, we point `next` of `Node 0` to the `head` (which is *Node 1*). Finally, we point `head` to `Node 0`.
+    > We are adding *Node 0* to the list. First, we point `next` of `Node 0` to the `head` (which is *Node 1*). Finally, we point `head` to `Node 0`.
 
 ## d. Insert Node at the end
 
 - Similar to insertion at the beginning, we modify `tail` instead of `head`.
 
-```cpp
-if (head == NULL) {
-    head = node;
-    tail = node;
-} else {
-    tail -> next = node; // Update the next pointer of the current tail
-    tail = node; // Tail is now the new Node
-}
-```
+    ```cpp
+    if (head == NULL) {
+        head = node;
+        tail = node;
+    } else {
+        tail -> next = node; // Update the next pointer of the current tail
+        tail = node; // Tail is now the new Node
+    }
+    ```
 
-![](img/img4.png)
+    ![](img/img4.png)
 
-> We are adding *Node 6* to the list. `Tail` is currently *Node 5*. First, we use `next` to connect *Node 5* and *Node 6*. Finally, we assign `tail` to `Node 6`.
+    > We are adding *Node 6* to the list. `Tail` is currently *Node 5*. First, we use `next` to connect *Node 5* and *Node 6*. Finally, we assign `tail` to `Node 6`.
 
 ## e. Insert Node after a specific Node
 
@@ -144,25 +144,25 @@ void DeleteAfterQ(Node* q) {
 
 - We will create a list with three nodes (1,2,3) and print out all nodes.
 
-```cpp
-int main() {
-    Node* head = NULL; // create head
+    ```cpp
+    int main() {
+        Node* head = NULL; // create head
 
-    // Insert some nodes into the linked list (for demonstration)
-    head = new Node(1); // assign new Node to null head
-    head->next = new Node(2);
-    head->next->next = new Node(3);
-    
-    Node* current = head;
-    while (current != NULL) {
-        cout << current -> data << " ";
+        // Insert some nodes into the linked list (for demonstration)
+        head = new Node(1); // assign new Node to null head
+        head->next = new Node(2);
+        head->next->next = new Node(3);
+        
+        Node* current = head;
+        while (current != NULL) {
+            cout << current -> data << " ";
 
-        current = current -> next; // Move to next Node
+            current = current -> next; // Move to next Node
+        }
+        
+        return 0;
     }
-    
-    return 0;
-}
-```
+    ```
 ## i. Get Node from a specific position
 
 ```cpp
@@ -203,20 +203,20 @@ int main() {
 
 - Similarly, now we only need to loop through and count.
 
-```cpp
-int Length()
-{
-	int count = 0;
-	Node* node = head;
+    ```cpp
+    int Length()
+    {
+        int count = 0;
+        Node* node = head;
 
-	while (node != NULL) {
-		count++;
-		node = node->next;
-	}
-    
-	return count;
-}
-```
+        while (node != NULL) {
+            count++;
+            node = node->next;
+        }
+        
+        return count;
+    }
+    ```
 
 ## l. Delete the entire list
 

@@ -10,15 +10,15 @@
 
     ## G = (V, E)
 
-> - Ordered pair:
-> `(a,b) != (b,a)` if a != b
->
-> - Unordered pair:
-> `{a,b} = {b,a}`
->
-> - Edges can be `directed` or `undirected`.
->
-> ![](img/img2.png)
+    > - Ordered pair:
+    > `(a,b) != (b,a)` if a != b
+    >
+    > - Unordered pair:
+    > `{a,b} = {b,a}`
+    >
+    > - Edges can be `directed` or `undirected`.
+    >
+    > ![](img/img2.png)
 
 - Here are sets of Vertices and Edges:
 

@@ -9,13 +9,15 @@
 
 - `Data Structure`:
     - Big-O Notation
-    - Single linked list.
-    - Doubly linked list.
-    - Stack.
-    - Queue.
+    - Single linked list
+    - Doubly linked list
+    - Stack
+    - Queue
     - Tree:
-        - Binary tree.
-        - Binary search tree.
+        - Binary tree
+        - Binary search tree
+        - Tree traversal
+        - Complete binary tree (heap)
     - Graph (updating...)
     - Others:
         - Struct
@@ -25,16 +27,16 @@
 
 - `Algorithm`:
     - Recursion
-    - Seach: 
+    - Seaching: 
         - Linear search
         - Binary search
-    - Sort:
+    - Sorting:
         - Bubble sort
         - Selection sort
         - Insertion sort
         - Merge sort
-        - Quick sort (updating...)
-        - Heap sort (updating...)
+        - Heap sort
+        - Quick sort
 
 # Is there a website for this repo?
 

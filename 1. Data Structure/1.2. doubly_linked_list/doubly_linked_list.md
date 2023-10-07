@@ -5,11 +5,11 @@
     - `data`: data item
     - `*next`: address of next node
 
-![](img/img1.png)
+    ![](img/img1.png)
 
 - Here is the illustration of a doubly-linked list:
 
-![](img/img2.png)
+    ![](img/img2.png)
 
 <table>
 <tr>
@@ -35,65 +35,65 @@
 
 - Firstly, we create Node structure and LinkedList
 
-```cpp
-struct Node {
-    int data;
-    Node* next;
-    Node* prev;
+    ```cpp
+    struct Node {
+        int data;
+        Node* next;
+        Node* prev;
 
-    // create constructor for adding data to node
-    Node(int num) {
-        data = num;
-        next = NULL;
-        prev = NULL;
+        // create constructor for adding data to node
+        Node(int num) {
+            data = num;
+            next = NULL;
+            prev = NULL;
+        }
+    };
+
+    struct LinkedList {
+        Node* head = NULL;
+        Node* tail = NULL;
     }
-};
-
-struct LinkedList {
-    Node* head = NULL;
-    Node* tail = NULL;
-}
-```
+    ```
 
 - Next, we create a new Node. 
 
-```cpp
-int main() {
+    ```cpp
+    int main() {
 
-    Node* node = new Node(1);
-    LinkedList list;
+        Node* node = new Node(1);
+        LinkedList list;
 
-    list.head = node;
+        list.head = node;
 
-    return 0;
-}
-```
+        return 0;
+    }
+    ```
 
 ## a. Insert at the beginning
 
 - First, we create a new Node
 
-```cpp
-Node* node2 = new Node(2);
-```
+    ```cpp
+    Node* node2 = new Node(2);
+    ```
 
 - Then, we connect that node to the front of the previous node.
 
-```cpp
-node2->next = node;
-node->prev = node2;
+    ```cpp
+    node2->next = node;
+    node->prev = node2;
 
-list.head = node2;
+    list.head = node2;
 
-// Actually we have to set `node2->prev=NULL`
-// but we've already declare it as default
-// in constructor
-```
+    // Actually we have to set `node2->prev=NULL`
+    // but we've already declare it as default
+    // in constructor
+    ```
 
-![](img/img3.png)
-![](img/img4.png)
+    ![](img/img3.png)
+    ![](img/img4.png)
 
-> Insertion at the end has similar logic.
+    > Insertion at the end has similar logic.
 
 
 ## b. Insert between two Nodes

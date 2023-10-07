@@ -10,22 +10,22 @@
 
     ![](img/img1.png)
 
-```cpp
-int linearSearch(int arr[], int target) {
-    int size = sizeof(arr)/sizeof(int);
+    ```cpp
+    int linearSearch(int arr[], int target) {
+        int size = sizeof(arr)/sizeof(int);
 
-    for (int i = 0; i<size; i++) {
-        if (arr[i] == target) {
-            
-            // return the index position
-            return i;
+        for (int i = 0; i<size; i++) {
+            if (arr[i] == target) {
+                
+                // return the index position
+                return i;
+            }
         }
-    }
 
-    // target not found
-    return -1;
-}
-```
+        // target not found
+        return -1;
+    }
+    ```
 
 ## b. Binary Search (Interval Search)
 
@@ -42,6 +42,7 @@ int linearSearch(int arr[], int target) {
         if (left <= right) {
 
             int mid = (left + right)/2;
+            // int mid = left + (right - left) /2;
         
             if (target < arr[mid]) {
                 return binarySearch(arr, target, left, mid-1);
@@ -60,25 +61,25 @@ int linearSearch(int arr[], int target) {
 
 - Solution 2: using `while loop`.
 
-```cpp
-int binarySearch(int arr[], int target, int size) {
-    int left = 0;
-    int right = size-1;
-    
-    while (left <= right) {
-        int mid = (left + right)/2;
+    ```cpp
+    int binarySearch(int arr[], int target, int size) {
+        int left = 0;
+        int right = size-1;
         
-        if (target < arr[mid]) {
-            right = mid - 1;
+        while (left <= right) {
+            int mid = (left + right)/2;
+            
+            if (target < arr[mid]) {
+                right = mid - 1;
 
-        } else if (target > arr[mid]) {
-            left = mid + 1;
+            } else if (target > arr[mid]) {
+                left = mid + 1;
 
-        } else if (target == arr[mid]) {
-            return mid;
+            } else if (target == arr[mid]) {
+                return mid;
+            }
         }
+        
+        return -1;
     }
-    
-    return -1;
-}
-```
+    ```
